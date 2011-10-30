@@ -1,0 +1,198 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>举手网</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="js/libs/jquery-1.5.1.min.js"></script>
+	<script type="text/javascript" src="js/libs/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+	<script type="text/javascript" src="js/libs/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.limit-1.2.source.js"></script>
+	<link rel="stylesheet" type="text/css" href="js/libs/fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+	
+	<script type="text/javascript"> 
+		$(document).ready(function(){
+			$('textarea').each(function(){
+				$(this).limit('160','#charsLeft');
+			
+			});
+		
+		
+		});
+	</script>
+</head>
+<body>
+	<!-- [header] -->
+	<div id="header">
+		<!-- [globalAction] -->
+		<div id="globalAction" class="clearfix">
+			<a id="logo" href="#" title="举手网"><img src="img/logo.gif" width="194" height="70" alt="举手网" title="举手网"/></a>
+			<form id="search" action="" method="">
+				<dl id="searchCates">
+					<dt>选择分类</dt>
+					<dd>
+						<ul>
+							<li>分类1</li>
+							<li>分类2</li>
+							<li>分类3</li>
+							<li>分类4</li>
+						</ul>
+					</dd>
+				</dl>
+				<input name="searchQuery" id="searchQuery" class="text" autocomplete="off" tabindex="0" type="text" value="搜索举手网商品..." />
+				<button type="submit" id="searchSubmit" name="searchSubmit"><span>搜索</span></button>
+			</form>
+			<a id="newGroupBuy" href="#"><span>发起一个团购</span></a>
+		</div>
+		<!-- [/globalAction] -->
+		
+		<!-- [mainNav] -->
+		<div id="mainNav" class="png_bg">
+			<div id="mainNavInner"  class="png_bg">
+			<ul class="clearfix">
+				<li><a href="#">首页</a></li>
+				<li><a href="#">正在团购</a></li>
+				<li><a href="#">最新需求</a></li>
+				<li><a href="#">往期团购</a></li>
+				<li><a href="#">玩转举手</a></li>
+			</ul>
+			
+			<p id="login">
+				<a href="#">登录</a>
+				<a href="#" id="signUp">免费注册</a>
+			</p>
+			</div>
+		</div>
+		<!-- [/mainNav] -->
+	
+	</div>
+	<!-- [/header] -->
+	
+	<!-- [wrapper] -->
+	<div id="wrapper" class="clearfix">
+		<!-- [mainBox] -->
+		<div id="main" class="left">
+			
+			
+			
+			
+			<!-- [addDeal] -->
+			<div id="addDeal" class="mainMod">
+				<h2>发起需求</h2>
+				
+				
+				<form action="">
+					<fieldset class="maketitle"> 
+						<h3>团购标题	</h3>
+						<div class="clearfix"> 
+							<textarea class="left" name="" id=""></textarea>
+							<div class="right titleTip">
+								<p>还可输入<span id="charsLeft">160</span>字符</p>
+								<p>请为你想团购的商品拟定一个精彩的标题，以便吸引其他用户快速组团成功。</p>
+							
+							</div>
+						</div>
+						
+					</fieldset>
+					
+					
+					<fieldset class="dealResource">
+						<h3>消息来源</h3>
+					
+						<div class="clearfix">
+							<p class="right tip">
+								我们推荐您粘贴一下网站的商品链接：<br />
+								<a href="#">阿里巴巴</a><a href="#">慧聪网</a><a href="#">马可波罗网</a>
+							</p>
+							<input type="text" name="" id="" class="text" />
+							<a href="">提交</a>
+						</div>
+						
+						<div class="previewPic">
+							<h5>图片预览</h5>
+							<ul class="clearfix">
+								<li><img src="http://flickholdr.com/96/60/cake" alt="" /><span></span></li>
+								<li><img src="http://flickholdr.com/96/60/apple" alt="" /></li>
+								<li><img src="http://flickholdr.com/96/60/cheese" alt="" /></li>
+								<li><img src="http://flickholdr.com/96/60/wine" alt="" /></li>
+							</ul>
+							<p>请选择一张图片</p>
+						</div>
+					
+					
+					</fieldset>
+					
+					<fieldset class="dealCategory">
+						<h3>选择类别	</h3>
+						
+						<ul class="clearfix">
+							<li><input type="radio" name="category" id="" /><span>家居</span></li>
+							<li><input type="radio" name="category" id="" /><span>数码</span></li>
+							<li><input type="radio" name="category" id="" /><span>服装</span></li>
+							<li><input type="radio" name="category" id="" /><span>食品</span></li>
+							<li><input type="radio" name="category" id="" /><span>其他</span></li>
+						</ul>
+					
+					
+					</fieldset>
+				
+				
+					<div class="action">
+						<div class="clearfix">
+							<a href="#" class="left preview"><img src="css/imgs/btns/cancel.jpg" alt="预览" /></a>
+							<input class="left" type="image" src="css/imgs/btns/addDeal.jpg" alt="添加需求" />
+						</div>
+						<p><a href="#">《举手网协议》</a></p>
+					</div>
+				
+				
+				</form>
+				
+				<div class="addDealPro">
+					<img src="img/add-deal-pro.jpg" alt="" />
+				
+				</div>
+				
+			</div>
+			<!-- [/addDeal] -->
+			
+		</div>
+		<!-- [/mainBox] -->
+		<div id="side" class="right">
+
+			<!-- [Customer service] -->
+			<div class="sidemod "><img src="img/customerService.jpg" alt="#" title="#"/></div>
+			<!-- [/Customer service] -->
+			
+			<!-- [Ask a question] -->
+			<div class="sidemod  askQuestion">
+				<form class="clearfix" action="#">
+					<textarea>输入您的问题...</textarea>
+					
+					<button type="submit"><span>提问</span></button>
+				</form>
+			</div>
+			<!-- [/Ask a question] -->
+		</div>
+		
+	
+	</div>
+	<!-- [/wrapper] -->
+	<div id="footer">
+		<div id="footerWrapper" class="png_bg">
+			<div id="footerInner" class="png_bg">
+				<div id="footerContent" class="png_bg">
+				<p><a href="#" title="">关于我们</a> | <a href="#" title="">服务条款</a> | <a href="#" title="">法律条款</a> | <a href="#" title="">联系我们</a> | <a href="#" title="">友情链接</a> | <a href="#" title="">消费保障</a></p>
+				<p>Copyright &copy; 2010-2011 版权所有 举手网 京ICP备11071188号</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	 <!--[if lt IE 7 ]>
+    <script src="js/libs/dd_belatedpng.js"></script>
+    <script>DD_belatedPNG.fix("img, .png_bg, .mainDeal, .mainDealLike, .remainTime, .modFooter, .mainDealAction .mainDealPrice li div"); // Fix any <img> or .png_bg bg-images. Also, please read goo.gl/mZiyb </script>
+	<![endif]-->
+</body>
+</html>
